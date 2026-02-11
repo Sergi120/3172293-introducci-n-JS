@@ -1,35 +1,37 @@
-// El objeto literal 
-// Esta es la forma mas comun, pero No es muy dinamico que digamos
-// De esta forma el objeto tiene diferentes variables
+// El objeto literal
+// Esta es la forma mas comun, pero no es muy dinamico que digamos
+// de esta forma el objeto tiene diferentes variables
 
-const product ={
-    productName : "Mouse",
-    ProductPrice : 50000,
+ const product = {
+    productName : "mouse",
+    productPrice : 50000,
     productColor : "red"
+ }
+
+//  Asi se crea un segundo objeto con el objeto liteal
+ const product2 = {
+    productName : "key board",
+    productPrice : 80000,
+    productColor : "blue"
+ }
+
+//  ====================================
+
+// Objeto constructor
+// Este objeto constructor debe de tener todos los valores que van a formar parte del objeto 
+// en los parentesis de la función llegan los parametros
+
+function Product(productName, productPrice, productColor) {
+   this.productName = productName;
+   this.productPrice = productPrice;
+   this.productColor = productColor;
 }
 
-//asi se crea un segundo objeto con el objeto literal
-const product2 ={
-    productName : "Key board",
-    ProductPrice : 80000,
-    productColor : "Blue"
-}
 
-//==========================================
+const product3 = new Product ("mouse", 3500, "Green");
+const product4 = new Product ("Cell phone", 3500, "Black");
+const product5 = new Product ("Pc", 3500, "White");
 
-//Objeto constructor
-// Este objeto contructor debe contener todos los diferentes valores que van a formar parte del objeto
-// En los parentesis de la funcion llegan los parametros
-
-function Product(productName, ProductPrice, productColor){
- this.productName = productName;
- this.ProductPrice = ProductPrice;
- this.productColor = productColor;
-}
-
-const product3 = new product("Mouse", 35000, "Green");
-const product4 = new product("cell phone", 45000, "black");
-const product5 = new product("PC", 500000, "White");
 
 console.log(product3);
 console.log(product4);
