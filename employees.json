@@ -1,0 +1,32 @@
+{
+    "__comment1": "La sintaxismp acepta comentarios",
+    "__comment2": "JSON Hace obligatorio usar llaves dobles",
+
+    "employees":[
+        {
+            "Id": 1,
+            "UserName": "Edwar",
+            "job": "Web programmer"
+        },
+         {
+            "Id": 2,
+            "UserName": "David",
+            "job": "UX / UI"
+        },
+         {
+            "Id": 3,
+            "UserName": "Brineidy",
+            "job": "Marketing"
+        },
+         {
+            "Id": 4,
+            "UserName": "Sergio",
+            "job": "Server"
+        },
+         {
+            "Id": 5,
+            "UserName": "Laura",
+            "job": "Fronted"
+        }
+    ]
+}
